@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poekhali</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <img class="navbar-brand" id="logo" src="/img/logo.PNG" alt="logotipo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/pages/ecuador.html">Ecuador Diverso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/amlat.html">América Latina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/rusia.html">Rusia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/extranjero.html">Estudiar en el extranjero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                          Redes Sociales</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=593987638141" target="blank"><img src="/img/whatsapp.png" alt="whatsapp" class="redsocial_whatsapp">WhatsApp</a>
+                          <a class="dropdown-item" href="https://www.facebook.com/titinaelizabeth7" target="blank"><img src="/img/facebook.png" alt="whatsapp" class="redsocial_whatsapp">Facebook</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="carousel-fotografias" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-fotografias" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-fotografias" data-slide-to="1"></li>
+                <li data-target="#carousel-fotografias" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/atardecer1.jpg" class="d-block w-100 calesita" alt="atardecer">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Atardecer</h5>
+                        <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/SIERRA2.jpg" class="d-block w-100 calesita" alt="ferrocaril">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ferrocaril de Ibarra</h5>
+                        <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/lagunas1.jpg" class="d-block w-100 calesita" alt="lagunas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lagunas de Tila</h5>
+                        <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-fotografias" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-fotografias" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="container bg-gradient-primary pt-5 text-center">
+            <article>
+                <img src="img/avatar.jpg" alt="avatar" class="rounded-circle avatar">
+                <h1 class="container-center">¡Algo de mi!</h1>
+                <p class="pt-2">¡Hola! Este blog fue creado para compartir mis experiencias de viaje ...Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+            </article>
+        </section>  
+    </main>
+  
+    <footer class="container-fluid">
+        <article>
+            <h2>Contacto</h2>
+            <span>Teléfono: +593 98 763 8141</span>
+            <span>E-mail: arq.elizabeth.toapanta@yandex.ru</span>
+        </article>         
+        <article>
+            <span>¡Suscríbete!</span>
+
+            <form action="">
+                <div>
+                    <label for="name">Ingrese su nombre:</label>
+                    <input type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
+                </div>
+                <div>
+                    <label for="apellido">Ingrese su apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
+                </div>
+                <div>
+                    <label for="email">Ingrese su e-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com"> 
+                </div>
+                <div>
+                    <label for="edad">Seleccione su rango de edad:</label>
+                    <select name="edad">
+                        <option value="e1">Menos de 15 años</option>
+                        <option value="e2">15-18 años</option>
+                        <option value="e3">19-25 años</option>
+                        <option value="e4">26-30 años</option>
+                        <option value="e5">31-40 años</option>
+                        <option value="e6">41-50 años</option>
+                        <option value="e7">Más de 50 años</option>
+                        <option value="e8">Prefiero no especificar</option>
+                    </select>
+                </div>
+                <div>
+                    <span>Seleccione su sexo:</span>
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="masculino"/> 
+                    <label for="sexo">Femenino</label>
+                    <input type="radio" name="sexo" value="femenino"/> 
+                    <label for="sexo">Otro</label>
+                    <input type="radio" name="sexo" value="otro"/> 
+                    <label for="sexo">Prefiero no especificar</label>
+                    <input type="radio" name="sexo" value="no-especificar"/> 
+                </div>
+                <div>
+                    <label for="consulta">Déjanos tu consulta o comentario:</label>
+                    <textarea name="consulta" id="consu" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="suscripcion">Deseo recibir novedades en mi correo electrónico</label>
+                    <input type="checkbox" name="suscripcion" value="1"/>
+                </div>
+                <div>
+                    <input type="reset" name="" id="">
+                    <input type="submit" name="" id="">
+                </div>
+                
+            </form>
+        </article>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
