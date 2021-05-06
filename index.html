@@ -102,8 +102,7 @@
         <article class="col-lg-9 col-sm-8 col-12 row">
             <span class="col-lg-2 col-md-12 text-center">Contacto:</span>
             <span class="col-lg-10 col-md-12 text-center text-lg-left">Teléfono: +593 98 763 8141</span>
-            <span class="col-lg-2"></span>
-            <span class="col-lg-10 col-md-12 text-center text-lg-left">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
+            <span class="col-lg-10 offset-lg-2 col-md-12 text-center text-lg-left">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
         </article>
         <article class="col-lg-3 col-sm-4 col-12 row">
             <span class="col-lg-8 text-center">¡Sígueme en redes sociales!</span>
@@ -117,26 +116,26 @@
             <div class="modal-content">
                 <div class="modal-header p-1">
                     <h5 class="modal-title mx-auto">¡Suscríbete!</h5>
-                    <button type="button" class="btn btn-danger rounded-circle" data-dismiss="modal" value="close"><span>x</span>
+                    <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body rounded">
                     <form action="">
-                        <div>
-                            <label for="name">Ingrese su nombre:</label>
-                            <input type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
+                        <div class="row">
+                            <label for="name" class="col-5">Ingrese su nombre:</label>
+                            <input class="col-6 rounded" type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
                         </div>
-                        <div>
-                            <label for="apellido">Ingrese su apellido:</label>
-                            <input type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
+                        <div class="row pt-2">
+                            <label for="apellido" class="col-5">Ingrese su apellido:</label>
+                            <input class="col-6 rounded" type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
                         </div>
-                        <div>
-                            <label for="email">Ingrese su e-mail:</label>
-                            <input type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com"> 
+                        <div class="row pt-2">
+                            <label for="email" class="col-5">Ingrese su e-mail:</label>
+                            <input class="col-6 rounded" type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com"> 
                         </div>
-                        <div>
-                            <label for="edad">Seleccione su rango de edad:</label>
-                            <select name="edad">
+                        <div class="row pt-2">
+                            <label class="col-5" for="edad">Seleccione su edad:</label>
+                            <select class="col-6 rounded" name="edad">
                                 <option value="e1">Prefiero no especificar</option>
                                 <option value="e2">Menos de 15 años</option>
                                 <option value="e3">15-18 años</option>
@@ -147,36 +146,32 @@
                                 <option value="e8">Más de 50 años</option>                            
                             </select>
                         </div>
-                        <div>
-                            <span>Seleccione su sexo:</span>
-                            <div>
-                                <label for="sexo">Masculino</label>
-                                <input type="radio" name="sexo" value="masculino"/> 
+                        <div class="row pt-2">
+                            <span class="col-5">Seleccione su sexo:</span>
+                            <div class="col-7">
+                                <input type="radio" name="sexo" value="masculino"/>
+                                <label for="sexo">Masculino</label>          
                             </div>
-                            <div>
-                                <label for="sexo">Femenino</label>
-                                <input type="radio" name="sexo" value="femenino"/>  
+                            <div class="col-7 offset-5">
+                                <input type="radio" name="sexo" value="femenino"/>
+                                <label for="sexo">Femenino</label>  
                             </div>
-                            <div>
-                                <label for="sexo">Otro</label>
-                                <input type="radio" name="sexo" value="otro"/>
-                            </div>
-                            <div>
-                                <label for="sexo">Prefiero no especificar</label>
+                            <div class="col-7 offset-5">
                                 <input type="radio" name="sexo" value="no-especificar"/> 
+                                <label for="sexo">Prefiero no especificar</label>
                             </div>                        
                         </div>
-                        <div>
-                            <label for="consulta">Déjanos tu consulta o comentario:</label>
-                            <textarea name="consulta" id="consu" cols="63" rows="3"></textarea>
+                        <div class="row">
+                            <label class="col-12" for="consulta">Déjanos tu consulta o comentario:</label>
+                            <textarea class="col-11 ml-3 rounded" name="consulta" id="consu"></textarea>
                         </div>
-                        <div>
+                        <div class="pt-2">
                             <label for="suscripcion">Deseo recibir novedades en mi correo electrónico</label>
                             <input type="checkbox" name="suscripcion" value="1"/>
                         </div>
                         <div class="modal-footer">
-                            <input type="reset" name="" id="">
-                            <input type="submit" name="" id="">
+                            <input class="rounded" type="reset" name="" id="">
+                            <input class="rounded" type="submit" name="" id="">
                         </div>                                    
                     </form>
                 </div>
