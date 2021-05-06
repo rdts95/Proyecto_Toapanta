@@ -1,0 +1,26 @@
+{
+  "name": "proyecto_toapanta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/proyecto.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdts95/Proyecto_Toapanta.git"
+  },
+  "author": "Ricardo Toapanta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdts95/Proyecto_Toapanta/issues"
+  },
+  "homepage": "https://github.com/rdts95/Proyecto_Toapanta#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
