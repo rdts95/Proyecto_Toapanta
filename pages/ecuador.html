@@ -1,64 +1,104 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecuador</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 <body>
     <header>
-
-        <h1>Poekhali</h1>
-        <img src="" alt="logotipo">
-
-        <ul>
-            <li><img src="../img/atardecer1.jpg" alt="imagen1"></li>
-            <li><img src="../img/redondel.jpg" alt="imagen2"></li>
-            <li><img src="../img/lagunas1.jpg" alt="imagen3"></li>
-            <li><img src="../img/nevado1.jpg" alt="imagen4"></li>
-        </ul>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="ecuador.html">Ecuador Diverso</a></li>
-                <li><a href="amlat.html">América Latina</a></li>
-                <li><a href="rusia.html">Rusia</a></li>
-                <li><a href="extranjero.html">Estudiar en el extranjero</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-            </ul>
-        </nav>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <img class="navbar-brand" id="logo" src="/img/logo.png" alt="logotipo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="ecuador.html">Ecuador Diverso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="amlat.html">América Latina</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rusia.html">Rusia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="extranjero.html">Estudiar en el extranjero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item" data-target="#suscribirse" data-toggle="modal" role="button">
+                        <span class="nav-link">Suscríbete</span>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                          Redes Sociales</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=593987638141" target="blank"><img src="/img/whatsapp.png" alt="whatsapp" class="redsocial_whatsapp">WhatsApp</a>
+                          <a class="dropdown-item" href="https://www.facebook.com/titinaelizabeth7" target="blank"><img src="/img/facebook.png" alt="whatsapp" class="redsocial_whatsapp">Facebook</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section>
-        <h2>Ecuador Diverso - Sección 1</h2>
-
-        <article>
-            <img src="../img/costa.jpg" alt="costa">
-            <h3>Disfruta del mar y la playa en la alegre Costa.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+    <main class="container">
+        <section>
+            <h1>Ecuador Diverso</h1>
+            <article class="media costa">
+                <img src="../img/costa.jpg" class="align-self-start mr-3 rounded costa__imagen" alt="costa">
+                <div class="media-body costa__texto">
+                    <h2 class="mt-0 costa__texto costa__texto--titulo">Disfruta del mar y la playa en la alegre Costa.</h2>
+                    <p class="costa__texto costa__texto--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                </div>                
+            </article>    
+            <article class="media sierra">
+                <div class="media-body sierra__texto">
+                    <h2 class="mt-0 mb-1 sierra__texto sierra__texto--titulo">Contempla los cerros y nevados de la imponente Sierra.</h2>
+                    <p class="sierra__texto sierra__texto--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>                        
+                </div>
+                <img src="../img/sierra.jpg" class="align-self-start ml-3 rounded sierra__imagen" alt="sierra">
+            </article>    
+            <article class="media amazonia">
+                <img src="../img/amazonia1.jpg" class="align-self-start mr-3 rounded amazonia__imagen" alt="amazonia">
+                <div class="media-body amazonia__texto">
+                    <h2 class="mt-0 amazonia__texto amazonia__texto--titulo">Intérnate en los exuberantes paisajes Amazónicos.</h2>
+                    <p class="amazonia__texto amazonia__texto--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                </div>
+            </article>
+            <article class="media galapagos">
+                <div class="media-body galapagos__texto">
+                    <h3 class="mt-0 mb-1 galapagos__texto galapagos__texto--titulo">Descubre las paradisíacas Islas Galápagos.</h3>
+                    <p class="galapagos__texto galapagos__texto--parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                </div>
+                <img src="../img/Galapagos-696x463-1.jpg" class="align-self-start ml-3 rounded galapagos__imagen" alt="galapagos">
+            </article>
+        </section>
+    </main>
+    <footer class="container-fluid bg-dark text-white row ml-0">
+        <article class="col-lg-9 col-sm-8 col-12 row">
+            <span class="col-lg-2 col-md-12 text-center">Contacto:</span>
+            <span class="col-lg-10 col-md-12 text-center text-lg-left">Teléfono: +593 98 763 8141</span>
+            <span class="col-lg-2"></span>
+            <span class="col-lg-10 col-md-12 text-center text-lg-left">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
         </article>
-
-        <article>
-            <img src="../img/sierra1.jpg.crdownload" alt="sierra">
-            <h3>Contempla los cerros y nevados de la imponente Sierra.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-        </article>
-
-        <article>
-            <img src="../img/amazonia1.jpg" alt="amazonia">
-            <h3>Intérnate en los exuberantes paisajes Amazónicos.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-        </article>
-
-        <article>
-            <img src="../img/Galapagos-696x463-1.jpg" alt="galapagos">
-            <h3>Descubre las paradisíacas Islas Galápagos.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-        </article>
-    </section>
+        <article class="col-lg-3 col-sm-4 col-12 row">
+            <span class="col-lg-8 text-center">¡Sígueme en redes sociales!</span>
+            <a class="col-lg-2 col-6 pt-2" href="https://api.whatsapp.com/send?phone=593987638141" target="blank"><img src="/img/whatsapp.png" alt="whatsapp" class="redsocial_whatsapp float-right"></a>
+            <a class="col-lg-2 col-6 pt-2" href="https://www.facebook.com/titinaelizabeth7" target="blank"><img src="/img/facebook.png" alt="whatsapp" class="redsocial_whatsapp float-left"></a>
+        </article>         
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html> -->
+</html>
