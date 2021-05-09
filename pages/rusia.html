@@ -52,28 +52,37 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
+        <h1>Rusia</h1>
         <section>
-            <h2>Rusia</h2>
-            <p>Consejos antes de viajar a Rusia: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, cum! Sed numquam soluta reiciendis rem aspernatur asperiores dolores aut quasi suscipit dicta ratione dignissimos excepturi, aliquam, animi quos beatae sapiente velit temporibus sunt corporis! Incidunt aperiam sequi, corporis hic fuga cum tempora quisquam distinctio ipsum provident impedit sit labore fugit.</p>
-    
-            <article>
-                <img src="../img/moscu.jpg" alt="moscu">
-                <h3>Un paseo por Moscú</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit ex quidem ut, voluptate dolores maxime veniam excepturi libero! Cupiditate aspernatur nam quibusdam consequatur quia!</p>
-            </article>
-    
-            <article>
-                <img src="../img/BELGOROD3.jpg" alt="belgorod">
-                <h3>Mi querida Bélgorod</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit ex quidem ut, voluptate dolores maxime veniam excepturi libero! Cupiditate aspernatur nam quibusdam consequatur quia!</p>
-            </article>
-    
-            <article>
-                <img src="../img/peter2.jpg" alt="san_petersburgo">
-                <h3>La ciudad de los zares: San Petersburgo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae suscipit ex quidem ut, voluptate dolores maxime veniam excepturi libero! Cupiditate aspernatur nam quibusdam consequatur quia!</p>
-            </article>
+            <h2>Consejos antes de viajar a Rusia</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, cum! Sed numquam soluta reiciendis rem aspernatur asperiores dolores aut quasi suscipit dicta ratione dignissimos excepturi, aliquam, animi quos beatae sapiente velit temporibus sunt corporis! Incidunt aperiam sequi, corporis hic fuga cum tempora quisquam distinctio ipsum provident impedit sit labore fugit.</p>
+        </section>
+        <section class="row d-flex justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/galeria/moscu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Un paseo por Moscú</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary" data-target="#moscu" data-toggle="modal" role="button">Leer más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/galeria/moscu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mi querida Bélgorod</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/galeria/moscu.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">La ciudad de los zares: San Petersburgo</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="container-fluid bg-dark text-white row ml-0">
@@ -89,6 +98,24 @@
             <a class="col-lg-2 col-6 pt-2" href="https://www.facebook.com/titinaelizabeth7" target="blank"><img src="/img/facebook.png" alt="whatsapp" class="redsocial_whatsapp float-left"></a>
         </article>         
     </footer>
+    <div class="modal" id="moscu" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Un paseo por Moscú</h5>
+              <button type="button" class="close" data-dismiss="modal">              </button>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla fugiat suscipit, eos nisi laborum minus accusamus iure laudantium earum perspiciatis delectus quos expedita hic tempore illum similique ducimus in. Dolor dolorem facere accusamus dicta pariatur aut itaque molestias animi maiores voluptatum ipsa ducimus iure voluptatibus corrupti quis inventore hic corporis, quaerat id neque iste. Labore nobis commodi provident explicabo quam nisi! Aperiam officia nemo quasi sit dolorem alias expedita iste, quis ipsum. Distinctio dolore repudiandae exercitationem eum voluptatum, laboriosam atque quos dicta voluptates aut, sed ad magni debitis. Corrupti non iure vel deleniti quidem modi consectetur soluta tempore cum, incidunt quas neque nobis? Dolor harum ad ullam quis enim consequatur nobis possimus ab quisquam! Quae blanditiis excepturi magni, possimus commodi in. Quaerat eos consectetur unde aliquam facere quas earum nam, nemo saepe labore molestiae! Vitae cum atque rerum, impedit temporibus autem incidunt consequatur, inventore dignissimos debitis iste quae architecto.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 
