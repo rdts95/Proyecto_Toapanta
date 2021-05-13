@@ -6,46 +6,79 @@
 
 /* Estilos de la BARRA DE NAVEGACIÓN */
 #logo {
-  height: 3.5rem;
-  width: 10rem; }
+  height: 10vh;
+  width: 35vh; 
+}
 
-  
+.navbar {
+  background-image: radial-gradient(circle closest-corner, #e7a428, #e49e06);
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  color: rgb(129, 45, 6) !important;
+}
+
+.lista {
+  list-style-type: disc;
+  margin-left: 2%;
+}
+
+.activo {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bolder;
+  text-decoration: underline rgb(0, 0, 0);
+}
+
 /* Estilos del FOOTER */
-.redsocial_whatsapp {
-  height: 4vh;
-  width: 4vh;
+.redsocial_instagram {
+  height: 6vh;
+  width: 6vh;
   padding-right: 2px;
   padding-bottom: 2px; 
 }
-.redsocial_facebook {
-  height: 4vh;
-  width: 4vh;
-  padding-right: 2px;
-  padding-bottom: 2px; 
+.footer--background {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
+} 
+
+/* Estilos de la página HOME */
+.carousel {
+  padding-top: 12.3vh;
 }
 
-/* Estilos sección HOME */
+.carousel-indicators li {
+  background-clip: border-box;
+  width: 4vh;
+  border-radius: 50%;
+  
+}
+
+.fondo_home {
+  background: linear-gradient(to top, #6190e8, #a7bfe8);
+}
+
 .avatar {
   width: 50%; 
-
 }
 
-/* Estilos sección AMÉRICA LATINA */
+/* Estilos de la página AMÉRICA LATINA */
+.tituloPrincipal {
+  padding-top: 12.3vh;
+}
 
-/* Estilos sección ECUADOR DIVERSO */
+/* Estilos de la página ECUADOR DIVERSO */
 .ecuador__imagen {
   height: 40vh;
   width: 50vh;
 }
 
-
-/* Estilos sección ESTUDIAR EN EL EXTRANJERO */
+/* Estilos de la página ESTUDIAR EN EL EXTRANJERO */
 /* .extranjero__imagen {
   height: 60vh;
   width: 100vh;
 } */
 
-/* Estilos sección GALERÍA */
+/* Estilos de la página GALERÍA */
 #galeria .col-lg-4 {
   padding: 25px;
 }
@@ -63,8 +96,40 @@
   height: 100%;
 }
 
-/* Estilos sección RUSIA */
+/* Estilos de la página RUSIA */
 
+
+/* Estilos de la opción SUSCRIBIRSE */
+.modal-header {
+  background-color: rgba(226, 157, 9, 0.925);
+}
+
+.modal-body {
+  background-color: rgba(233, 194, 109, 0.925);
+}
+
+.modal-footer {
+  background-color: rgba(226, 157, 9, 0.925);
+}
+
+.botones__posicion  {
+  position: absolute;
+  top: 104%;
+  left: 35%;
+}
+
+.botones__bordes {
+  padding: 3px;
+  background-color: teal  ;
+  border-color: rgb(1, 91, 133);
+  font-weight: bold;
+}
+
+.botones__bordes:hover {
+  background-color: rgb(59, 139, 139)  ;
+  font-size: 15.5px;
+  color: #f7f7f7;
+}
 
 /* Media queries */
 @media (min-width: 768px) {
@@ -72,3 +137,13 @@
          width: 30%;
   }
 }
+
+@media (min-width: 992px) {
+  .lista {
+    list-style-type: none;
+  }
+  .texto__instagram {
+    opacity: 0;
+  }
+}
+
