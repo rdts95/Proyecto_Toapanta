@@ -46,11 +46,11 @@
 .tituloPrincipal {
   font-size: x-large;
   text-transform: uppercase;
-  margin-left: 2vh;
-  margin-right: 2vh;
+ /*  width: 30%;
+  height: 20%; */
   margin-top: 20vh;
   margin-bottom: 3vh;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(253, 204, 98);
   border-style: double;
 }
@@ -83,8 +83,50 @@ img.carousel-caption  {
 }
 
 /* Estilos de la página AMÉRICA LATINA */
+.amlat__contenedor {
+  border: 2px solid  #000;
+  border-radius: 10px;
+}
 
+/* .mapa {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+} */
+.mapa {
+  opacity: 0.8;
+}
 
+.mapa:hover {
+  opacity: 1;
+}
+
+.marcador {
+  width: 5%;
+}
+.marcador--1 {
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  filter: brightness(0);
+}
+.marcador--2 {
+  position: absolute;
+  top: 33%;
+  left: 46%;
+  filter: brightness(0);
+}
+.marcador--3 {
+  position: absolute;
+  top: 60%;
+  left: 53%;
+  filter: brightness(0);
+}
+.marcador:hover {
+  width: 6%;
+  filter: none;
+}
 /* Estilos de la página ECUADOR DIVERSO */
   .ecuador {
   opacity: 0.2;
@@ -109,11 +151,11 @@ img.carousel-caption  {
   height: 60vh;
   width: 100vh;
 } */
-.tituloPrincipal--extenso {
+/* .tituloPrincipal--extenso {
   text-transform: uppercase;
-  margin-left: 0vh;
-  margin-right: 0vh;
-}
+ width: 40%;
+  height: 20%;
+} */
 
 /* Estilos de la página GALERÍA */
 #galeria .col-lg-4 {
@@ -184,7 +226,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
 
 
 /* Media queries */
-@media (min-width: 355px) {
+@media (min-width: 354px) {
   .tituloPrincipal {
     margin-top: 15vh;
     margin-left: 7vh;
