@@ -11,7 +11,7 @@
 }
 
 .navbar {
-  background-image: radial-gradient(circle closest-corner, #e7a428, #e49e06);
+  background-image: radial-gradient(circle closest-corner, #4f39ce, #470899);
   opacity: 0.9;
 }
 
@@ -46,11 +46,8 @@
 .tituloPrincipal {
   font-size: x-large;
   text-transform: uppercase;
- /*  width: 30%;
-  height: 20%; */
   margin-top: 20vh;
   margin-bottom: 3vh;
-  /* text-align: center; */
   background-color: rgb(253, 204, 98);
   border-style: double;
 }
@@ -88,12 +85,6 @@ img.carousel-caption  {
   border-radius: 10px;
 }
 
-/* .mapa {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-} */
 .mapa {
   opacity: 0.8;
 }
@@ -147,15 +138,6 @@ img.carousel-caption  {
 }
 
 /* Estilos de la página ESTUDIAR EN EL EXTRANJERO */
-/* .extranjero__imagen {
-  height: 60vh;
-  width: 100vh;
-} */
-/* .tituloPrincipal--extenso {
-  text-transform: uppercase;
- width: 40%;
-  height: 20%;
-} */
 
 /* Estilos de la página GALERÍA */
 #galeria .col-lg-4 {
@@ -219,11 +201,6 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   font-size: 15.5px;
   color: #f7f7f7;
 }
-/* .galer {
-  position: relative;
-  top: 25vh;
-} */
-
 
 /* Media queries */
 @media (min-width: 354px) {
