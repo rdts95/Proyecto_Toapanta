@@ -7,9 +7,11 @@
     <title>Ecuador</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
+
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <img class="navbar-brand" id="logo" src="../img/logo.png" alt="logotipo">
@@ -17,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 text-uppercase font-weight-bold d-flex justify-content-between align-items-baseline text-center">
+                <ul class="navbar-nav w-100 text-uppercase font-weight-bold d-flex justify-content-between align-items-baseline ">
                     <li class="nav-item lista">
                         <a class="nav-link text-white" href="../index.html">Home</a>
                     </li>
@@ -44,37 +46,55 @@
         </nav>
     </header>
 
-    <main class="container ecuador">
-        <h1 class="tituloPrincipal">Ecuador Diverso</h1>
-        <section class="media ecuador__seccion row">
-            <img src="../img/costa.jpg" class="rounded  ecuador__imagen" alt="costa">
-            
-            <div class="media-body ecuador__contenedorTexto">
-                <h2 class="mt-0 ecuador__tituloTexto">Disfruta del mar y la playa en la alegre Costa.</h2>
-                <p class="ecuador__parrafoTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-            </div>                
-        </section>    
-        <section class="media ecuador__seccion">
-            <div class="media-body ecuador__contenedorTexto">
-                <h2 class="mt-0 mb-1 ecuador__tituloTexto">Contempla los cerros y nevados de la imponente Sierra.</h2>
-                <p class="ecuador__parrafoTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>                        
-            </div>
-            <img src="../img/sierra.jpg" class="align-self-start ml-3 rounded ecuador__imagen" alt="sierra">
-        </section>    
-        <section class="media ecuador__seccion">
-            <img src="../img/amazonia1.jpg" class="align-self-start mr-3 rounded ecuador__imagen" alt="amazonia">
-            <div class="media-body ecuador__contenedorTexto">
-                <h2 class="mt-0 ecuador__tituloTexto">Intérnate en los exuberantes paisajes Amazónicos.</h2>
-                <p class="ecuador__parrafoTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-            </div>
-        </section>
-        <section class="media ecuador__seccion">
-            <div class="media-body ecuador__contenedorTexto">
-                <h2 class="mt-0 mb-1 ecuador__tituloTexto">Descubre las paradisíacas Islas Galápagos.</h2>
-                <p class="ecuador__parrafoTexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
-            </div>
-            <img src="../img/Galapagos-696x463-1.jpg" class="align-self-start ml-3 rounded ecuador__imagen" alt="galapagos">
-        </section>
+    <main>
+        <img src="../img/mapa-.png" alt="mapa" class="ecuador">
+        <div class="container">
+            <h1 class="tituloPrincipal animate__animated animate__bounceIn">Ecuador Diverso</h1>
+            <section class="media ecuador__seccion mt-3 pt-4 row">
+                <img src="../img/costa.jpg" class="rounded col-12 col-md-4 col-xl-3  ecuador__imagen" alt="costa">
+                
+                <div class="media-body ecuador__contenedorTexto col-12 col-md-8 col-xl-9">
+                    <h2 class="mt-0 ecuador__tituloTexto">Disfruta del mar y la playa en la alegre Costa.</h2>
+                    <p class="ecuador__parrafoTexto d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!  </p>
+                    <button class="botones__bordes" data-target="#galeriaCosta" data-toggle="modal">
+                        Galería
+                    </button>  
+                </div> 
+                             
+            </section>    
+            <section class="media ecuador__seccion mt-3 pt-4 flex-row-reverse row">
+                <img src="../img/sierra.jpg" class="rounded  col-12 col-md-4 col-xl-3 ecuador__imagen" alt="sierra">
+                <div class="media-body ecuador__contenedorTexto col-12 col-md-8 col-xl-9">
+                    <h2 class="mt-0 mb-1 ecuador__tituloTexto">Contempla los cerros y nevados de la imponente Sierra.</h2>
+                    <p class="ecuador__parrafoTexto d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                    <button class="botones__bordes" data-target="#galeriaSierra" data-toggle="modal">
+                        Galería
+                    </button>                          
+                </div>
+                
+            </section>    
+            <section class="media ecuador__seccion mt-3 pt-4 row">
+                <img src="../img/amazonia1.jpg" class="rounded  col-12 col-md-4 col-xl-3 ecuador__imagen" alt="amazonia">
+                <div class="media-body ecuador__contenedorTexto col-12 col-md-8 col-xl-9">
+                    <h2 class="mt-0 ecuador__tituloTexto">Intérnate en los exuberantes paisajes Amazónicos.</h2>
+                    <p class="ecuador__parrafoTexto d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                    <button class="botones__bordes" data-target="#galeriaAmazonia" data-toggle="modal">
+                        Galería
+                    </button>  
+                </div>
+            </section>
+            <section class="media ecuador__seccion mt-3 pt-4 mb-3 d-flex flex-row-reverse row">
+                <img src="../img/Galapagos-696x463-1.jpg" class="rounded col-12 col-md-4 col-xl-3 ecuador__imagen" alt="galapagos">
+                <div class="media-body ecuador__contenedorTexto col-12 col-md-8 col-xl-9">
+                    <h2 class="mt-0 mb-1 ecuador__tituloTexto">Descubre las paradisíacas Islas Galápagos.</h2>
+                    <p class="ecuador__parrafoTexto d-inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
+                    <button class="botones__bordes" data-target="#galeriaGalapagos" data-toggle="modal">
+                        Galería
+                    </button>  
+                </div>
+            </section>
+        </div>
+       
     </main>
 
       <footer>
@@ -166,6 +186,203 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="galeriaCosta" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-1">
+                    <h5 class="modal-title mx-auto">Costa</h5>
+                    <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel-fotografias-costa" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-fotografias-costa" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-fotografias-costa" data-slide-to="1"></li>
+                            <li data-target="#carousel-fotografias-costa" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Atardecer</h5>
+                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ferrocaril de Ibarra</h5>
+                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <div class="carousel-caption d-none d-md-block op">
+                                    <h5>Lagunas de Tila</h5>
+                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-fotografias-costa" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-fotografias-costa" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galeriaSierra" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-1">
+                    <h5 class="modal-title mx-auto">Costa</h5>
+                    <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel-fotografias-sierra" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-fotografias-sierra" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-fotografias-sierra" data-slide-to="1"></li>
+                            <li data-target="#carousel-fotografias-sierra" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Atardecer</h5>
+                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ferrocaril de Ibarra</h5>
+                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <div class="carousel-caption d-none d-md-block op">
+                                    <h5>Lagunas de Tila</h5>
+                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-fotografias-sierra" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-fotografias-sierra" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galeriaAmazonia" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-1">
+                    <h5 class="modal-title mx-auto">Costa</h5>
+                    <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel-fotografias-amazonia" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-fotografias-amazonia" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-fotografias-amazonia" data-slide-to="1"></li>
+                            <li data-target="#carousel-fotografias-amazonia" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Atardecer</h5>
+                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ferrocaril de Ibarra</h5>
+                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <div class="carousel-caption d-none d-md-block op">
+                                    <h5>Lagunas de Tila</h5>
+                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-fotografias-amazonia" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-fotografias-amazonia" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="galeriaGalapagos" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-1">
+                    <h5 class="modal-title mx-auto">Costa</h5>
+                    <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="carousel-fotografias-galapagos" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-fotografias-galapagos" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-fotografias-galapagos" data-slide-to="1"></li>
+                            <li data-target="#carousel-fotografias-galapagos" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Atardecer</h5>
+                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Ferrocaril de Ibarra</h5>
+                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <div class="carousel-caption d-none d-md-block op">
+                                    <h5>Lagunas de Tila</h5>
+                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-fotografias-galapagos" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-fotografias-galapagos" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

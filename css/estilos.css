@@ -41,16 +41,37 @@
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
 } 
 
+
+/* Otros estilos comunes */
+.tituloPrincipal {
+  font-size: x-large;
+  text-transform: uppercase;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  background-color: rgb(253, 204, 98);
+  border-style: double;
+}
+
+img.carousel-caption  {
+  opacity: 0.7;
+  height: 17vh;
+  width: 70%;
+  border-radius: 50px;
+}
+
 /* Estilos de la página HOME */
-.carousel {
-  padding-top: 12.3vh;
+.calesita {
+  padding-top: 12vh;
 }
 
 .carousel-indicators li {
   background-clip: border-box;
-  width: 4vh;
-  border-radius: 50%;
-  
+  width: 20px;
+  height: 1px;
+  border-radius: 100%;
 }
 
 .fondo_home {
@@ -62,21 +83,36 @@
 }
 
 /* Estilos de la página AMÉRICA LATINA */
-.tituloPrincipal {
-  padding-top: 12.3vh;
-}
+
 
 /* Estilos de la página ECUADOR DIVERSO */
-.ecuador__imagen {
-  height: 40vh;
-  width: 50vh;
+  .ecuador {
+  opacity: 0.2;
+  position: fixed;
+  z-index: -5;
+  width: 90%;
+  margin-top: 15vh;
 }
 
+.ecuador__seccion {
+  border-top: 2px solid #000;
+}
+
+.carousel__imagenes {
+  max-height: 80vh;
+  width: auto;
+  margin: auto;
+}
 /* Estilos de la página ESTUDIAR EN EL EXTRANJERO */
 /* .extranjero__imagen {
   height: 60vh;
   width: 100vh;
 } */
+.tituloPrincipal--extenso {
+  text-transform: uppercase;
+  margin-left: 0vh;
+  margin-right: 0vh;
+}
 
 /* Estilos de la página GALERÍA */
 #galeria .col-lg-4 {
@@ -130,20 +166,96 @@
   font-size: 15.5px;
   color: #f7f7f7;
 }
+/* .galer {
+  position: relative;
+  top: 25vh;
+} */
+
 
 /* Media queries */
+@media (min-width: 355px) {
+  .tituloPrincipal {
+    margin-top: 15vh;
+    margin-left: 7vh;
+    margin-right: 7vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .ecuador {
+    width: 70%;
+    margin-top: 0vh;
+    margin-left: 15%;
+   }
+   .tituloPrincipal {
+    margin-left: 12vh;
+    margin-right: 12vh;
+  }
+}
+
 @media (min-width: 768px) {
   .avatar {
          width: 30%;
   }
+  .ecuador {
+    width: 60%;
+   }
+   
 }
 
 @media (min-width: 992px) {
   .lista {
     list-style-type: none;
   }
+  .nav-item {
+    text-align: center;
+  }
   .texto__instagram {
     opacity: 0;
   }
+  .tituloPrincipal {
+    margin-left: 45vh;
+    margin-right: 45vh;
+    margin-bottom: 3vh;
+  }
+  .tituloPrincipal--extenso {
+    margin-left: 35vh;
+    margin-right: 35vh;
+  }
 }
 
+@media (min-width: 1024px) {
+  img.carousel-caption  {
+    height: 20vh;
+  }
+  .borde_r {
+    border-right: 2px solid rgb(255, 255, 255);
+  }
+  .borde_l {
+    border-left: 2px solid rgb(255, 255, 255);
+  }
+  .arregloFooter {
+    text-align: end !important;
+  }
+  .arregloFooter2 {
+    text-align: start !important;
+  }
+  .ecuador {
+    width: 45%;
+    margin-left: 25%;
+   }
+}
+
+@media (min-width: 1440px) {
+  .ecuador {
+    width: 40%;
+    margin-left: 30%;
+   }
+}
+
+@media (min-width: 1700px) {
+  .ecuador {
+    width: 30%;
+    margin-left: 35%;
+   }
+}

@@ -7,9 +7,10 @@
     <title>Poekhali</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
+
 <body>
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <img class="navbar-brand" id="logo" src="/img/logo.png" alt="logotipo">
@@ -42,15 +43,17 @@
                 </ul>
             </div>
         </nav>
-        <div id="carousel-fotografias" class="carousel slide" data-ride="carousel">
+        <div id="carousel-fotografias" class="carousel slide calesita" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-fotografias" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-fotografias" data-slide-to="1"></li>
                 <li data-target="#carousel-fotografias" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
+                
                 <div class="carousel-item active">
                     <img src="/img/atardecer1.jpg" class="d-block w-100" alt="atardecer">
+                    <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Atardecer</h5>
                         <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
@@ -58,6 +61,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="/img/SIERRA2.jpg" class="d-block w-100" alt="ferrocaril">
+                    <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Ferrocaril de Ibarra</h5>
                         <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
@@ -65,6 +69,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="/img/lagunas1.jpg" class="d-block w-100" alt="lagunas">
+                    <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="">
                     <div class="carousel-caption d-none d-md-block op">
                         <h5>Lagunas de Tila</h5>
                         <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
@@ -90,25 +95,14 @@
         </section>  
     </main>
   
-    <footer>
-        <div class="text-white row mr-0 footer--background">
-            <article class="col-lg-9 col-sm-8 col-12">
-                <div class="row">
-                    <span class="col-lg-2 col-md-12 text-center">Contacto:</span>
-                    <span class="col-lg-10 col-md-12 text-center text-lg-left">Teléfono: +593 98 763 8141</span>
-                    <span class="col-lg-10 offset-lg-2 col-md-12 text-center text-lg-left">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
-                </div>
-               
-            </article>
-            <article class="col-lg-3 col-sm-4 col-12">
-                <div class="row">
-                    <span class="col-lg-8 col-12 text-center d-lg-flex align-items-center">¡Sígueme en Instagram!</span>
-                    <a class="col-lg-4 col-12 pt-2 text-center" href="" target="blank"><img src="/img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram"></a>
-                </div>
-                
-            </article>         
-        </div>
-        
+    <footer class="container-fluid">
+        <article class="text-white footer footer--background d-flex align-items-center row">
+            <span class="text-center col-lg-3 borde_r">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
+            <span class="text-center col-lg-2 arregloFooter">¡Sígueme en Instagram! </span>
+            <a class="text-center col-lg-1 arregloFooter2" href="" target="blank"><img src="/img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram"></a>
+            <span class="text-center col-lg-4 borde_r borde_l">Copyright©2021 Poekhali-Todos los derechos reservados</span>
+            <span class="text-center col-lg-2">Creado por: Toapanta R.</span>
+        </article>     
     </footer>
 
     <div class="modal fade" id="suscribirse" data-backdrop="static" data-keyboard="false" tabindex="-1">
