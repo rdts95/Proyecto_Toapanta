@@ -10,65 +10,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+    <img class="amlat__fondo fixed-top" src="https://live.staticflickr.com/4451/37545707542_ca30d132fd_b.jpg" alt="danza">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <img class="navbar-brand" id="logo" src="../img/logo.png" alt="logotipo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <img class="navbar-brand" id="logo" src="/img/logo.png" alt="logotipo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 text-uppercase font-weight-bold d-flex justify-content-between align-items-baseline text-center">
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav  w-100 d-flex justify-content-between align-items-baseline text-center text-uppercase font-weight-bold ">
                     <li class="nav-item lista">
                         <a class="nav-link text-white" href="../index.html">Home</a>
                     </li>
                      <li class="nav-item lista">
-                        <a class="nav-link text-white" href="ecuador.html">Ecuador Diverso</a>
+                        <a class="nav-link text-white" href="/pages/ecuador.html">Ecuador Diverso</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white activo" href="amlat.html">América Latina</a>
+                        <a class="nav-link text-white activo" href="/pages/amlat.html">América Latina</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white" href="rusia.html">Rusia</a>
+                        <a class="nav-link text-white" href="/pages/rusia.html">Rusia</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white" href="extranjero.html">Estudiar en el extranjero</a>
+                        <a class="nav-link text-white" href="/pages/extranjero.html">Estudiar en el extranjero</a>
                     </li>
-                    <li class="nav-item lista" data-target="#suscribirse" data-toggle="modal" role="button">
-                        <span class="nav-link text-white">Suscríbete</span>
+                    <li class="nav-item lista" data-target="#contactame" data-toggle="modal" role="button">
+                        <span class="nav-link text-white">Contacto</span>
                     </li>
-                    <li class="nav-item">
-                        <a href="" target="_blank"><img src="../img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram rounded"><span class="text-white texto__instagram">Instagram</span></a>
+                    <li class="nav-item lista">
+                        <a href="https://www.instagram.com/poekhali_ecuador/?hl=es-la" target="_blank"><img src="/img/iconos/instagram.png" alt="instagram" class="redsocial_instagram rounded"><span class="text-white texto__instagram">Instagram</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container ">
         <h1 class="tituloPrincipal animate__animated animate__bounceIn text-center">América Latina</h1>
         <div class="card mb-3 amlat__contenedor">
-            <img class="mapa w-50 d-block mx-auto" src="../img/amlat.png" alt="mapa">
-            <a href="#" role="button" data-target="#colombiaModalPrincipal" data-toggle="modal"><img class="marcador marcador--1" src="../img/alfiler.svg" alt="alfiler"></a>
-            <a href="#" role="button" data-target="#peruModalPrincipal" data-toggle="modal"><img class="marcador marcador--2" src="../img/alfiler.svg" alt="alfiler"></a>
-            <a href="#" role="button" data-target="#argentinaModalPrincipal" data-toggle="modal"><img class="marcador marcador--3" src="../img/alfiler.svg" alt="alfiler"></a>          
+            <img class="mapa d-block mx-auto" src="../img/amlat/amlat.png" alt="mapa">
+            <a href="#" role="button" data-target="#colombiaModalPrincipal" data-toggle="modal"><img class="marcador marcador--1" src="../img/amlat/alfiler.svg" alt="alfiler"></a>
+            <a href="#" role="button" data-target="#peruModalPrincipal" data-toggle="modal"><img class="marcador marcador--2" src="../img/amlat/alfiler.svg" alt="alfiler"></a>
+            <a href="#" role="button" data-target="#argentinaModalPrincipal" data-toggle="modal"><img class="marcador marcador--3" src="../img/amlat/alfiler.svg" alt="alfiler"></a>          
         </div>
     </main>
 
     <footer class="container-fluid">
         <div class="text-white footer footer--background d-flex align-items-center row">
             <span class="text-center col-lg-3 borde_r">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
-            <span class="text-center col-lg-2 arregloFooter">¡Sígueme en Instagram! </span>
-            <a class="text-center col-lg-1 arregloFooter2" href="" target="blank"><img src="../img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram"></a>
+            <span class="text-center col-lg-2 footer__textoInstagram">¡Sígueme en Instagram! </span>
+            <a class="text-center col-lg-1 footer__iconoInstagram" href="https://www.instagram.com/poekhali_ecuador/?hl=es-la" target="blank"><img src="/img/iconos/instagram.png" alt="instagram" class="redsocial_instagram"></a>
             <span class="text-center col-lg-4 borde_r borde_l">Copyright©2021 Poekhali-Todos los derechos reservados</span>
             <span class="text-center col-lg-2">Creado por: Toapanta R.</span>
         </div>     
     </footer>
 
-    <div class="modal fade" id="suscribirse" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal fade" id="contactame" data-backdrop="static" data-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-1">
-                    <h5 class="modal-title mx-auto">¡Suscríbete!</h5>
+                    <h5 class="modal-title mx-auto">¡Contáctame!</h5>
                     <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
@@ -76,15 +77,18 @@
                     <form action="">
                         <div class="row">
                             <label for="name" class="col-5">Ingrese su nombre:</label>
-                            <input class="col-6 rounded" type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
+                            <input class="col-6 rounded esconder-corto" type="text" name="name" id="name" placeholder="Ej: Alberto">
+                            <input class="col-6 rounded esconder-largo" type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
                         </div>
                         <div class="row pt-2">
                             <label for="apellido" class="col-5">Ingrese su apellido:</label>
-                            <input class="col-6 rounded" type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
+                            <input class="col-6 rounded esconder-corto" type="text" name="apellido" id="apellido" placeholder="Ej: Suárez"> 
+                            <input class="col-6 rounded esconder-largo" type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
                         </div>
                         <div class="row pt-2">
                             <label for="email" class="col-5">Ingrese su e-mail:</label>
-                            <input class="col-6 rounded" type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com"> 
+                            <input class="col-6 rounded esconder-corto" type="email" name="email" id="email" placeholder="Ej: viajero@gmail.com"> 
+                            <input class="col-6 rounded esconder-largo" type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com">
                         </div>
                         <div class="row pt-2">
                             <label class="col-5" for="edad">Seleccione su edad:</label>
@@ -100,7 +104,7 @@
                             </select>
                         </div>
                         <div class="row pt-2">
-                            <span class="col-5">Seleccione su sexo:</span>
+                            <span class="col-5 font-weight-bold">Seleccione su sexo:</span>
                             <div class="col-7">
                                 <input type="radio" name="sexo" value="masculino"/>
                                 <label for="sexo">Masculino</label>          
@@ -122,7 +126,7 @@
                             <label for="suscripcion">Deseo recibir novedades en mi correo electrónico</label>
                             <input type="checkbox" name="suscripcion" value="1"/>
                         </div>
-                        <div class="botones__posicion">
+                        <div class="modal__botones">
                             <input class="rounded botones__bordes" type="reset" name="" id="" >
                             <input class="rounded botones__bordes" type="submit" name="" id="">
                         </div>                                    
@@ -132,6 +136,7 @@
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="colombiaModalPrincipal" data-backdrop="static" data-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
@@ -153,7 +158,7 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-1">
-                    <h5 class="modal-title mx-auto">Colombia</h5>
+                    <h5 class="modal-title mx-auto">Galería-Colombia</h5>
                     <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
@@ -166,38 +171,42 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <img src="/img/amlat/colombia/camping__colombia.jpg" class="d-block carousel__imagenes" alt="camping">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Atardecer</h5>
-                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                    <h5>Camping</h5>
+                                    <p>Disfrutando de acampar en las playas de Santa Marta (Colombia).</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <img src="/img/amlat/colombia/cartagena__colombia.jpg" class="d-block carousel__imagenes" alt="cartagena">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ferrocaril de Ibarra</h5>
-                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                    <h5>Cartagena</h5>
+                                    <p>Increíble vista en Cartagena (Colombia).</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <img src="/img/amlat/colombia/playas_colombia.jpg" class="d-block carousel__imagenes" alt="capurgana">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block op">
-                                    <h5>Lagunas de Tila</h5>
-                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                    <h5>Playas de Capurgana</h5>
+                                    <p>Explorando el paraíso de las playas de Capurgana (Colombia).</p>
                                 </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-fotografias-colombia" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon bg-dark"></span>
                         </a>
                         <a class="carousel-control-next" href="#carousel-fotografias-colombia" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
+                            <span class="carousel-control-next-icon bg-dark"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="peruModalPrincipal" data-backdrop="static" data-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
@@ -219,7 +228,7 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-1">
-                    <h5 class="modal-title mx-auto">Perú</h5>
+                    <h5 class="modal-title mx-auto">Galería-Perú</h5>
                     <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
@@ -228,42 +237,37 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-fotografias-peru" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-fotografias-peru" data-slide-to="1"></li>
-                            <li data-target="#carousel-fotografias-peru" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <img src="/img/amlat/peru/puntasal_peru.jpg" class="d-block carousel__imagenes" alt="punta_sal">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Atardecer</h5>
-                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                    <h5>Punta Sal</h5>
+                                    <p>Entrada al hermoso balneario de Punta Sal (Perú).</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <img src="/img/amlat/peru/tortugas__peru.jpg" class="d-block carousel__imagenes" alt="tortugas">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ferrocaril de Ibarra</h5>
-                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
-                                <div class="carousel-caption d-none d-md-block op">
-                                    <h5>Lagunas de Tila</h5>
-                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                    <h5>Tortugas</h5>
+                                    <p>Nadando con las tortugas en la caleta de Tortugas (Perú).</p>
                                 </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-fotografias-peru" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon bg-dark"></span>
                         </a>
                         <a class="carousel-control-next" href="#carousel-fotografias-peru" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
+                            <span class="carousel-control-next-icon bg-dark"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="argentinaModalPrincipal" data-backdrop="static" data-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
@@ -285,7 +289,7 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-1">
-                    <h5 class="modal-title mx-auto">Argentina</h5>
+                    <h5 class="modal-title mx-auto">Galería-Argentina</h5>
                     <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
@@ -298,38 +302,42 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../img/atardecer1.jpg" class="d-block carousel__imagenes" alt="atardecer">
+                                <img src="/img/amlat/argentina/obelisco__argentina.jpg" class="d-block carousel__imagenes" alt="obelisco">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Atardecer</h5>
-                                    <p>Un atardecer en la bella ciudad de Belgorod (Rusia).</p>
+                                    <h5>Obelisco</h5>
+                                    <p>Monumento histórico, considerado ícono de la Ciudad Autónoma de Buenos Aires (Argentina).</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/graduacion.jpg" class="d-block carousel__imagenes" alt="ferrocaril">
+                                <img src="/img/amlat/argentina/barriochino__argentina.jpg" class="d-block carousel__imagenes" alt="barrio_chino">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Ferrocaril de Ibarra</h5>
-                                    <p>Ferrocaril del año 1950 en la ciudad de Ibarra (Ecuador).</p>
+                                    <h5>Barrio Chino</h5>
+                                    <p>Porción del barrio de Belgrano con una identidad marcadamente oriental (Argentina).</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="../img/lagunas1.jpg" class="d-block carousel__imagenes" alt="lagunas">
+                                <img src="/img/amlat/argentina/puentedelamujer__argentina.jpg" class="d-block carousel__imagenes" alt="puente">
+                                <img class="carousel-caption d-none d-md-block" src="https://image.flaticon.com/icons/png/512/1/1601.png" alt="recuadro">
                                 <div class="carousel-caption d-none d-md-block op">
-                                    <h5>Lagunas de Tila</h5>
-                                    <p>Lagunas de Tila ubicadas en la vía Macas-Riobamba (Ecuador).</p>
+                                    <h5>Puente de la mujer</h5>
+                                    <p>Puente que simboliza una pareja bailando tango (Argentina).</p>
                                 </div>
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carousel-fotografias-argentina" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon bg-dark"></span>
                         </a>
                         <a class="carousel-control-next" href="#carousel-fotografias-argentina" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
+                            <span class="carousel-control-next-icon bg-dark"></span>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

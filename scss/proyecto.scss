@@ -1,23 +1,394 @@
-#logo {
-    height: 3.5rem;
-    width: 10rem;
-}
-
-.redsocial_whatsapp {
-    height: 4vh;
-    width: 4vh;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos de la BARRA DE NAVEGACIÓN */
+  #logo {
+    height: 10vh;
+    width: 35vh; 
+  }
+  
+  .navbar {
+    background: radial-gradient(circle, rgba(244,86,92,1) 0%, rgba(244,179,115,1) 100%);
+    opacity: 0.9;
+  }
+  
+  .nav-link:hover {
+    color: rgb(95, 6, 6) !important;
+    font-weight: bolder;
+  }
+  
+  .lista {
+    list-style-type: disc;
+    margin-left: 2%;
+  }
+  
+  .activo {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder;
+    text-decoration: underline 3px rgb(112, 22, 52);
+  }
+  
+  /* Estilos del FOOTER */
+  .redsocial_instagram {
+    height: 6vh;
+    width: 6vh;
     padding-right: 2px;
-    padding-bottom: 2px;
-}
-.avatar {
-    height: 50vh;
-    width: 50vh;
-}
-/* .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-} */
-/* .calesita {
-    padding-top: 30vh;
-} */
+    padding-bottom: 2px; 
+  }
+  .footer--background {
+    background: radial-gradient(circle, rgb(94, 30, 39) 0%, rgb(71, 33, 35) 100%); 
+  } 
+  
+  /* Otros estilos comunes */
+  .tituloPrincipal {
+    font-size: x-large;
+    text-transform: uppercase;
+    margin-top: 20vh;
+    margin-bottom: 3vh;
+    background-color: rgb(230, 77, 85);
+    border-style: double;
+    border-radius: 10px;
+    box-shadow: 0px 3px rgb(119, 57, 59);
+    color: rgb(238, 229, 229);
+  }
+  
+  .tituloPrincipal:hover {
+    font-weight: bolder;
+  }
+  
+  img.carousel-caption  {
+    opacity: 0.7;
+    height: 17vh;
+    width: 70%;
+    border-radius: 50px;
+  }
+  
+  main {
+    min-height: 60vh;
+    
+  }
+  
+  .arriba__estilo {
+    width: 50px;
+    border-radius: 100%;
+    opacity: 0.8;
+  }
+  
+  .botones__bordes {
+    color: rgb(17, 16, 16);
+    padding: 3px 7px 3px 7px;
+    background-color: rgb(75, 243, 207) ;
+    border-color: rgb(70, 2, 11);
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .botones__bordes:hover {
+    background-color: rgb(78, 4, 4)  ;
+    font-size: 15.5px;
+    color: #f7f7f7;
+  }
+  
+  /* Estilos de la página HOME */
+  .calesita {
+    padding-top: 20vh;
+  }
+  
+  .carousel-indicators li {
+    background-clip: border-box;
+    width: 20px;
+    height: 1px;
+    border-radius: 100%;
+  }
+  
+  .avatar {
+    width: 50%; 
+  }
+  
+  .fondo__home {
+    background-color: rgb(226, 189, 42);
+  }
+  
+  /* Estilos de la página AMÉRICA LATINA */
+  .fondo__amlat {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vh;
+    z-index: -100;
+    opacity: 0.7;
+  }
+  
+  .amlat__contenedor {
+    border: 0px;
+    /* border-radius: 10px; */
+    background: transparent;
+  }
+  
+  .mapa {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #000;
+    background-color: rgb(214, 213, 191);
+  }
+  
+  .mapa:hover {
+    opacity: 1;
+  }
+  
+  .marcador {
+    width: 5%;
+  }
+  
+  .marcador:hover {
+    width: 6%;
+    filter: none;
+  }
+  
+  .marcador--1 {
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    filter: brightness(0);
+  }
+  
+  .marcador--2 {
+    position: absolute;
+    top: 33%;
+    left: 46%;
+    filter: brightness(0);
+  }
+  
+  .marcador--3 {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    filter: brightness(0);
+  }
+  
+  /* Estilos de la página ECUADOR DIVERSO */
+    .ecuador {
+    opacity: 0.3;
+    position: fixed;
+    z-index: -5;
+    width: 90%;
+    margin-top: 15vh;
+  }
+  
+  .ecuador__seccion {
+    border-top: 2px solid #000;
+  }
+  
+  .carousel__imagenes {
+    max-width: 90%;
+    max-height: 80vh;
+    margin: auto;
+  }
+  
+  /* Estilos de la página ESTUDIAR EN EL EXTRANJERO */
+  .fondo__extranjero {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    z-index: -100;
+  
+  }
+  
+  /* Estilos de la página RUSIA */
+  .rusia {
+    background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  }
+  
+  .rusia__seccion {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  
+  .rusia__card {
+    border: 2px solid #000;
+    border-radius: 10px;
+    
+  }
+  
+  .rusia__card:hover {
+    width: 20rem;
+  }
+  
+  .fondo__rusia {
+    background-color: rgb(252, 252, 181);
+  }
+  
+  /* Estilos del modal */
+  /* .modal-header {
+    background-color: rgba(247, 56, 199, 0.925);
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .modal-body {
+    background: radial-gradient(circle, rgb(253, 185, 230) 0%, rgb(247, 131, 214) 100%);
+    border: 2px solid rgb(59, 58, 3);
+  }
+  
+  .modal-footer {
+    background-color: rgba(69, 9, 71, 0.925);
+    border: 2px solid rgb(59, 4, 45);
+  } */
+  
+  .botones__posicion  {
+    position: absolute;
+    top: 104%;
+    left: 35%;
+  }
+  
+  .esconder-largo {
+    display: none;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  
+  /* Media queries */
+  @media (min-width: 293px) {
+    .tituloPrincipal {
+      margin-top: 15vh;
+    }
+    main {
+      min-height: 79vh;
+    }
+    .calesita {
+      padding-top: 12vh;
+    }  
+    .amlat__contenedor {
+      margin-top: 10vh;
+    }
+  }
+  
+  @media (min-width: 375px) {
+    .tituloPrincipal {
+      margin-left: 7vh;
+      margin-right: 7vh;
+    }
+    .amlat__contenedor {
+      margin-top: 0vh;
+    }
+  }
+  
+  @media (min-width: 425px) {
+    .mapa {
+      width: 80%;
+    }
+    .tituloPrincipal {
+      margin-left: 12vh;
+      margin-right: 12vh;
+    }
+  }
+  
+  @media (min-width: 486px) {
+    .esconder-corto {
+      display: none;
+    }
+    .esconder-largo {
+      display: initial;
+    }
+    .fondo__amlat {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .ecuador {
+      width: 70%;
+      margin-top: 0vh;
+      margin-left: 15%;
+     }
+  }
+  
+  @media (min-width: 768px) {
+    .avatar {
+      width: 30%;
+    }
+    .ecuador {
+      width: 60%;
+     }
+    .mapa {
+      width: 45%;
+    } 
+    .marcador--3 {
+      left: 52%;
+    }
+    .arriba {
+      display: none;
+    }
+    .tituloPrincipal {
+      margin-left: 35vh;
+      margin-right: 35vh;
+    }
+    .tituloPrincipal--extenso {
+      margin-left: 12vh;
+      margin-right: 12vh;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .lista {
+      list-style-type: none;
+    }
+    .nav-item {
+      text-align: center;
+    }
+    .texto__instagram {
+      opacity: 0;
+    }
+    .tituloPrincipal {
+      margin-left: 45vh;
+      margin-right: 45vh;
+      margin-bottom: 3vh;
+    }
+    .tituloPrincipal--extenso {
+      margin-left: 35vh;
+      margin-right: 35vh;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    img.carousel-caption  {
+      height: 20vh;
+    }
+    .borde_r {
+      border-right: 2px solid rgb(255, 255, 255);
+    }
+    .borde_l {
+      border-left: 2px solid rgb(255, 255, 255);
+    }
+    .arregloFooter {
+      text-align: end !important;
+    }
+    .arregloFooter2 {
+      text-align: start !important;
+    }
+    .ecuador {
+      width: 45%;
+      margin-left: 25%;
+     }
+  }
+  
+  @media (min-width: 1440px) {
+    .ecuador {
+      width: 40%;
+      margin-left: 30%;
+     }
+  }
+  
+  @media (min-width: 1700px) {
+    .ecuador {
+      width: 30%;
+      margin-left: 35%;
+     }
+  }
+  

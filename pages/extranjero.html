@@ -11,35 +11,35 @@
 </head>
 
 <body>
-
+    <img class="fondo__extranjero fixed-top" src="https://cdn.pixabay.com/photo/2017/09/10/21/48/matryoshka-2737108_1280.jpg" alt="">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <img class="navbar-brand" id="logo" src="../img/logo.png" alt="logotipo">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <img class="navbar-brand" id="logo" src="/img/logo.png" alt="logotipo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav w-100 text-uppercase font-weight-bold d-flex justify-content-between align-items-baseline text-center">
+            <div class="collapse navbar-collapse" id="barraNavegacion">
+                <ul class="navbar-nav  w-100 d-flex justify-content-between align-items-baseline text-center text-uppercase font-weight-bold ">
                     <li class="nav-item lista">
                         <a class="nav-link text-white" href="../index.html">Home</a>
                     </li>
                      <li class="nav-item lista">
-                        <a class="nav-link text-white" href="ecuador.html">Ecuador Diverso</a>
+                        <a class="nav-link text-white" href="/pages/ecuador.html">Ecuador Diverso</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white" href="amlat.html">América Latina</a>
+                        <a class="nav-link text-white" href="/pages/amlat.html">América Latina</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white" href="rusia.html">Rusia</a>
+                        <a class="nav-link text-white" href="/pages/rusia.html">Rusia</a>
                     </li>
                     <li class="nav-item lista">
-                        <a class="nav-link text-white activo" href="extranjero.html">Estudiar en el extranjero</a>
+                        <a class="nav-link text-white activo" href="/pages/extranjero.html">Estudiar en el extranjero</a>
                     </li>
-                    <li class="nav-item lista" data-target="#suscribirse" data-toggle="modal" role="button">
-                        <span class="nav-link text-white">Suscríbete</span>
+                    <li class="nav-item lista" data-target="#contactame" data-toggle="modal" role="button">
+                        <span class="nav-link text-white">Contacto</span>
                     </li>
-                    <li class="nav-item">
-                        <a href="" target="_blank"><img src="../img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram rounded"><span class="text-white texto__instagram">Instagram</span></a>
+                    <li class="nav-item lista">
+                        <a href="https://www.instagram.com/poekhali_ecuador/?hl=es-la" target="_blank"><img src="/img/iconos/instagram.png" alt="instagram" class="redsocial_instagram rounded"><span class="text-white texto__instagram">Instagram</span></a>
                     </li>
                 </ul>
             </div>
@@ -49,28 +49,28 @@
     <main class="container extranjero">
         <section>
             <h1 class="tituloPrincipal tituloPrincipal--extenso animate__animated animate__bounceIn text-center">Estudiar en el extranjero</h1>
-            <img src="../img/graduacion.jpg" class="extranjero__imagen rounded d-block mx-auto w-75" alt="graduacion">
+            <img src="../img/extranjero/graduacion.jpg" class="extranjero__imagen rounded d-block mx-auto w-75" alt="graduacion">
         </section>
         <section class="accordion mb-5 mt-5" id="acordionExtranjero">
             <article class="card">
-                <div class="card-header">
-                    <h2 class="mb-0 extranjero__titulo" data-toggle="collapse" data-target="#experiencia" role="button">Mi experiencia</h2>
+                <div class="card-header extranjero__titulo">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#experiencia" role="button">Mi experiencia</h2>
                 </div>
                 <div id="experiencia" class="collapse" data-parent="#acordionExtranjero" >
                     <p class="card-body extranjero__parrafo">¡Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
                 </div>
             </article>
             <article class="card">
-                <div class="card-header">
-                    <h2 class="mb-0 extranjero__titulo" data-toggle="collapse" data-target="#consejos" role="button">Consejos</h2>
+                <div class="card-header extranjero__titulo">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#consejos" role="button">Consejos</h2>
                 </div>
                 <div id="consejos" class="collapse" data-parent="#acordionExtranjero">
                     <p class="card-body extranjero__parrafo">¡Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam maiores architecto. Voluptas mollitia voluptate maiores. Rerum qui incidunt laboriosam omnis illo. Quasi amet repudiandae, accusantium deleniti ab ducimus corrupti. Maiores perspiciatis cum expedita, iusto quibusdam molestiae consequatur reprehenderit numquam enim sunt, dignissimos omnis, optio officia ullam ipsum minima eligendi!</p>
                 </div>
             </article>
             <article class="card">
-                <div class="card-header">
-                    <h2 class="mb-0 extranjero__titulo" data-toggle="collapse" data-target="#video" role="button">Universidad Estatal de Belgorod</h2>
+                <div class="card-header extranjero__titulo">
+                    <h2 class="mb-0" data-toggle="collapse" data-target="#video" role="button">Universidad Estatal de Belgorod</h2>
                 </div>
                 <div id="video" class="collapse" data-parent="#acordionExtranjero">
                     <div class="card-body">
@@ -86,17 +86,18 @@
     <footer class="container-fluid">
         <div class="text-white footer footer--background d-flex align-items-center row">
             <span class="text-center col-lg-3 borde_r">E-mail: arq.elizabeth.toapanta@yandex.ru</span>
-            <span class="text-center col-lg-2 arregloFooter">¡Sígueme en Instagram! </span>
-            <a class="text-center col-lg-1 arregloFooter2" href="" target="blank"><img src="../img/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="instagram" class="redsocial_instagram"></a>
+            <span class="text-center col-lg-2 footer__textoInstagram">¡Sígueme en Instagram! </span>
+            <a class="text-center col-lg-1 footer__iconoInstagram" href="https://www.instagram.com/poekhali_ecuador/?hl=es-la" target="blank"><img src="/img/iconos/instagram.png" alt="instagram" class="redsocial_instagram"></a>
             <span class="text-center col-lg-4 borde_r borde_l">Copyright©2021 Poekhali-Todos los derechos reservados</span>
             <span class="text-center col-lg-2">Creado por: Toapanta R.</span>
         </div>     
     </footer>
-    <div class="modal fade" id="suscribirse" data-backdrop="static" data-keyboard="false" tabindex="-1">
+
+    <div class="modal fade" id="contactame" data-backdrop="static" data-keyboard="false" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header p-1">
-                    <h5 class="modal-title mx-auto">¡Suscríbete!</h5>
+                    <h5 class="modal-title mx-auto">¡Contáctame!</h5>
                     <button type="button" class="btn btn-danger rounded" data-dismiss="modal" value="close"><span>X</span>
                     </button>
                 </div>
@@ -104,15 +105,18 @@
                     <form action="">
                         <div class="row">
                             <label for="name" class="col-5">Ingrese su nombre:</label>
-                            <input class="col-6 rounded" type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
+                            <input class="col-6 rounded esconder-corto" type="text" name="name" id="name" placeholder="Ej: Alberto">
+                            <input class="col-6 rounded esconder-largo" type="text" name="name" id="name" placeholder="Ejemplo: Alberto">
                         </div>
                         <div class="row pt-2">
                             <label for="apellido" class="col-5">Ingrese su apellido:</label>
-                            <input class="col-6 rounded" type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
+                            <input class="col-6 rounded esconder-corto" type="text" name="apellido" id="apellido" placeholder="Ej: Suárez"> 
+                            <input class="col-6 rounded esconder-largo" type="text" name="apellido" id="apellido" placeholder="Ejemplo: Suárez"> 
                         </div>
                         <div class="row pt-2">
                             <label for="email" class="col-5">Ingrese su e-mail:</label>
-                            <input class="col-6 rounded" type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com"> 
+                            <input class="col-6 rounded esconder-corto" type="email" name="email" id="email" placeholder="Ej: viajero@gmail.com"> 
+                            <input class="col-6 rounded esconder-largo" type="email" name="email" id="email" placeholder="Ejemplo: viajero@gmail.com">
                         </div>
                         <div class="row pt-2">
                             <label class="col-5" for="edad">Seleccione su edad:</label>
@@ -128,7 +132,7 @@
                             </select>
                         </div>
                         <div class="row pt-2">
-                            <span class="col-5">Seleccione su sexo:</span>
+                            <span class="col-5 font-weight-bold">Seleccione su sexo:</span>
                             <div class="col-7">
                                 <input type="radio" name="sexo" value="masculino"/>
                                 <label for="sexo">Masculino</label>          
@@ -150,7 +154,7 @@
                             <label for="suscripcion">Deseo recibir novedades en mi correo electrónico</label>
                             <input type="checkbox" name="suscripcion" value="1"/>
                         </div>
-                        <div class="botones__posicion">
+                        <div class="modal__botones">
                             <input class="rounded botones__bordes" type="reset" name="" id="" >
                             <input class="rounded botones__bordes" type="submit" name="" id="">
                         </div>                                    
@@ -160,6 +164,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

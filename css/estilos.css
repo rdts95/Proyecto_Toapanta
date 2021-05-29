@@ -7,16 +7,17 @@
 /* Estilos de la BARRA DE NAVEGACIÓN */
 #logo {
   height: 10vh;
-  width: 35vh; 
+  width: 25vh; 
 }
 
 .navbar {
-  background-image: radial-gradient(circle closest-corner, #4f39ce, #470899);
+  background: radial-gradient(circle, rgba(244,86,92,1) 0%, rgba(244,179,115,1) 100%);
   opacity: 0.9;
 }
 
 .nav-link:hover {
-  color: rgb(129, 45, 6) !important;
+  color: rgb(95, 6, 6) !important;
+  font-weight: bolder;
 }
 
 .lista {
@@ -27,7 +28,7 @@
 .activo {
   color: rgb(0, 0, 0) !important;
   font-weight: bolder;
-  text-decoration: underline rgb(0, 0, 0);
+  text-decoration: underline 3px rgb(112, 22, 52);
 }
 
 /* Estilos del FOOTER */
@@ -37,31 +38,17 @@
   padding-right: 2px;
   padding-bottom: 2px; 
 }
+
 .footer--background {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
+  background: radial-gradient(circle, rgb(94, 30, 39) 0%, rgb(71, 33, 35) 100%); 
 } 
 
-
-/* Otros estilos comunes */
-.tituloPrincipal {
-  font-size: x-large;
-  text-transform: uppercase;
-  margin-top: 20vh;
-  margin-bottom: 3vh;
-  background-color: rgb(253, 204, 98);
-  border-style: double;
-}
-
+/* Estilos del carousel */
 img.carousel-caption  {
-  opacity: 0.7;
+  opacity: 0.65;
   height: 17vh;
   width: 70%;
   border-radius: 50px;
-}
-
-/* Estilos de la página HOME */
-.calesita {
-  padding-top: 12vh;
 }
 
 .carousel-indicators li {
@@ -71,56 +58,123 @@ img.carousel-caption  {
   border-radius: 100%;
 }
 
-.fondo_home {
-  background: linear-gradient(to top, #6190e8, #a7bfe8);
+.carousel__imagenes {
+  max-width: 90%;
+  max-height: 80vh;
+  margin: auto;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+
+/* Otros estilos comunes */
+.tituloPrincipal {
+  font-size: x-large;
+  text-transform: uppercase;
+  margin-top: 20vh;
+  margin-bottom: 3vh;
+  background-color: rgb(230, 77, 85);
+  border-style: double;
+  border-radius: 10px;
+  box-shadow: 0px 3px rgb(119, 57, 59);
+  color: rgb(238, 229, 229);
+}
+
+.tituloPrincipal:hover {
+  font-weight: bolder;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.arriba__estilo {
+  width: 50px;
+  border-radius: 100%;
+  opacity: 0.8;
+}
+
+.botones__bordes {
+  color: rgb(17, 16, 16);
+  padding: 3px 7px 3px 7px;
+  background-color: rgb(75, 243, 207) ;
+  border-color: rgb(70, 2, 11);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.botones__bordes:hover {
+  background-color: rgb(78, 4, 4)  ;
+  font-size: 15.5px;
+  color: #f7f7f7;
+}
+
+/* Estilos de la página HOME (index) */
+.calesita {
+  padding-top: 20vh;
 }
 
 .avatar {
   width: 50%; 
 }
 
+.fondo__home {
+  background-color: rgb(211, 243, 241);
+}
+
 /* Estilos de la página AMÉRICA LATINA */
+.amlat__fondo {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100vh;
+  z-index: -100;
+  opacity: 0.7;
+}
+
 .amlat__contenedor {
-  border: 2px solid  #000;
-  border-radius: 10px;
+  border: 0px;
+  background: transparent;
 }
 
 .mapa {
-  opacity: 0.8;
-}
-
-.mapa:hover {
-  opacity: 1;
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid #000;
+  background-color: rgb(248, 248, 241);
 }
 
 .marcador {
   width: 5%;
 }
+
+.marcador:hover {
+  width: 6%;
+  filter: none;
+}
+
 .marcador--1 {
   position: absolute;
   top: 20%;
   left: 47%;
   filter: brightness(0);
 }
+
 .marcador--2 {
   position: absolute;
   top: 33%;
   left: 46%;
   filter: brightness(0);
 }
+
 .marcador--3 {
   position: absolute;
   top: 60%;
-  left: 53%;
+  left: 60%;
   filter: brightness(0);
 }
-.marcador:hover {
-  width: 6%;
-  filter: none;
-}
+
 /* Estilos de la página ECUADOR DIVERSO */
   .ecuador {
-  opacity: 0.2;
+  opacity: 0.3;
   position: fixed;
   z-index: -5;
   width: 90%;
@@ -131,83 +185,132 @@ img.carousel-caption  {
   border-top: 2px solid #000;
 }
 
-.carousel__imagenes {
-  max-width: 90%;
-  max-height: 80vh;
-  margin: auto;
+.ecuador__imagen {
+  padding-left: 0px;
+  padding-right: 0px;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 
 /* Estilos de la página ESTUDIAR EN EL EXTRANJERO */
-
-/* Estilos de la página GALERÍA */
-#galeria .col-lg-4 {
-  padding: 25px;
-}
-
-#galeria img:hover {
-  border: 5px solid #f7f7f7;
-}
-
-#galeria img {
-  width: 100%;
-  height: 80%;
-}
-
-.total {
+.fondo__extranjero {
+  display: flex;
+  flex-wrap: nowrap;
   height: 100%;
+  z-index: -100;
+  opacity: 0.6;
+}
+
+.extranjero__imagen {
+  border: 3px solid #000;
+  /* width: 60%; */
+}
+
+.extranjero__titulo {
+  background: radial-gradient(circle, rgba(244,86,92,1) 0%, rgba(244,179,115,1) 100%);
+  text-align: center;
+  color: #f7f7f7;
 }
 
 /* Estilos de la página RUSIA */
-.rusia {
-  background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+.fondo__rusia {
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: -100;
+  opacity: 0.6;
 }
 
 .rusia__seccion {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
+  background-color: #f7f7f7
 }
 
-/* Estilos de la opción SUSCRIBIRSE */
+.rusia__card {
+  border: 2px solid #000;
+  border-radius: 10px;
+  
+}
+
+.rusia__card:hover {
+  width: 200rem;
+}
+
+/* Estilos del modal */
 .modal-header {
-  background-color: rgba(226, 157, 9, 0.925);
+  background: radial-gradient(circle, rgba(244,86,92,1) 0%, rgba(244,179,115,1) 100%);
+  opacity: 0.9;
+  color: white;
+  text-transform: uppercase;
 }
 
 .modal-body {
-  background-color: rgba(233, 194, 109, 0.925);
+  background: radial-gradient(circle, rgb(206, 245, 252) 0%, rgb(187, 244, 252) 100%);
 }
 
 .modal-footer {
-  background-color: rgba(226, 157, 9, 0.925);
-}
+  background: radial-gradient(circle, rgba(244,86,92,1) 0%, rgba(244,179,115,1) 100%);
+} 
 
-.botones__posicion  {
+.modal__botones  {
   position: absolute;
   top: 104%;
   left: 35%;
 }
 
-.botones__bordes {
-  color: #000;
-  padding: 3px 7px 3px 7px;
-  background-color: teal  ;
-  border-color: rgb(1, 91, 133);
-  font-weight: bold;
-  border-radius: 10px;
+.esconder-largo {
+  display: none;
 }
 
-.botones__bordes:hover {
-  background-color: rgb(59, 139, 139)  ;
-  font-size: 15.5px;
-  color: #f7f7f7;
+label {
+  font-weight: bold;
 }
 
 /* Media queries */
-@media (min-width: 354px) {
+@media (min-width: 293px) {
   .tituloPrincipal {
     margin-top: 15vh;
+  }
+  main {
+    min-height: 79vh;
+  }
+  .calesita {
+    padding-top: 12vh;
+  }  
+  .amlat__contenedor {
+    margin-top: 10vh;
+  }
+}
+
+@media (min-width: 375px) {
+  .tituloPrincipal {
     margin-left: 7vh;
     margin-right: 7vh;
+  }
+  .amlat__contenedor {
+    margin-top: 0vh;
+  }
+}
+
+@media (min-width: 425px) {
+  .mapa {
+    width: 80%;
+  }
+  .tituloPrincipal {
+    margin-left: 12vh;
+    margin-right: 12vh;
+  }
+}
+
+@media (min-width: 486px) {
+  .esconder-corto {
+    display: none;
+  }
+  .esconder-largo {
+    display: initial;
+  }
+  .amlat__fondo {
+    width: 100%;
   }
 }
 
@@ -217,20 +320,39 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
     margin-top: 0vh;
     margin-left: 15%;
    }
-   .tituloPrincipal {
-    margin-left: 12vh;
-    margin-right: 12vh;
-  }
 }
 
 @media (min-width: 768px) {
   .avatar {
-         width: 30%;
+    width: 30%;
   }
   .ecuador {
     width: 60%;
    }
-   
+  .mapa {
+    width: 45%;
+  } 
+  .marcador--3 {
+    left: 52%;
+  }
+  .arriba {
+    display: none;
+  }
+  .tituloPrincipal {
+    margin-left: 35vh;
+    margin-right: 35vh;
+  }
+  .tituloPrincipal--extenso {
+    margin-left: 12vh;
+    margin-right: 12vh;
+  }
+  .fondo__extranjero {
+    width: 100%;
+    height: auto;
+  }
+  .extranjero__imagen {
+    width: 60% !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -264,12 +386,15 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   .borde_l {
     border-left: 2px solid rgb(255, 255, 255);
   }
-  .arregloFooter {
+
+  .footer__textoInstagram {
     text-align: end !important;
   }
-  .arregloFooter2 {
+
+  .footer__iconoInstagram {
     text-align: start !important;
   }
+
   .ecuador {
     width: 45%;
     margin-left: 25%;
